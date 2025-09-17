@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Signup - Fatima</title>
+  <style>
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    .form-container {
+      background: #1a1a1a;
+      padding: 40px;
+      border-radius: 15px;
+      width: 320px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(255, 51, 153, 0.5);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #ff66cc;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(135deg, #ff3399, #6600ff);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    a {
+      display: block;
+      margin-top: 15px;
+      font-size: 14px;
+      color: #ff66cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #fff;
+    }
+
+    /* Cartoon illustration */
+    .login-cartoon {
+      width: 200px;
+      margin-bottom: 20px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(255, 51, 153, 0.4);
+    }
+
+    @media(max-width: 400px) {
+      .form-container { width: 90%; padding: 30px; }
+      .login-cartoon { width: 150px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Login</h2>
+    <form>
+      <input type="email" placeholder="Enter Email" required>
+      <input type="password" placeholder="Enter Password" required>
+      <button type="submit">Login</button>
+    </form>
+
+    <h2>Signup</h2>
+    <form>
+      <input type="text" placeholder="Enter Name" required>
+      <input type="email" placeholder="Enter Email" required>
+      <input type="password" placeholder="Enter Password" required>
+      <button type="submit">Signup</button>
+    </form>
+
+    <a href="index.html">⬅ Back to Home</a>
+  </div>
+
+</body>
+</html>

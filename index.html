@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fatima Mirza | Portfolio</title>
+  <style>
+    /* Reset & base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      /* Gradient background replacing black */
+      background: #111 ;
+      color: #fff;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #ff3399, #6600ff);
+      text-align: center;
+      padding: 3rem 1rem;
+      color: #fff;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 5px #000;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #f0f0f0;
+    }
+
+    /* Navigation */
+    nav {
+      background: #111;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 1rem;
+      border-bottom: 2px solid #ff3399;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+      transition: 0.3s;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      left: 0;
+      bottom: -5px;
+      background: #ff3399;
+      transition: 0.3s;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      flex-grow: 1;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #ff66cc;
+    }
+
+    /* About section layout */
+    #about div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+    #about p {
+      max-width: 450px;
+      text-align: center;
+      font-size: 1.1rem;
+      color: #ddd;
+    }
+
+    /* Cartoon Illustration */
+    .cartoon-img {
+      width: 250px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(255, 51, 153, 0.4);
+      transition: transform 0.3s;
+    }
+    .cartoon-img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Skills cards */
+    .skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+    .card {
+      background: #1a1a1a;
+      padding: 25px;
+      border-radius: 12px;
+      width: 220px;
+      box-shadow: 0 0 15px rgba(255, 51, 153, 0.5);
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px rgba(255, 51, 153, 0.8);
+    }
+
+    /* Contact links */
+    .contact-links a {
+      display: inline-block;
+      margin: 10px 15px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      color: #fff;
+      text-decoration: none;
+      background: linear-gradient(135deg, #ff3399, #570072);
+      transition: transform 0.3s;
+    }
+    .contact-links a:hover {
+      transform: scale(1.1);
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      padding: 1.5rem;
+      text-align: center;
+      color: #999;
+      border-top: 2px solid #ff3399;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      #about div {
+        flex-direction: column;
+        text-align: center;
+      }
+      #about p {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fatima Mirza</h1>
+    <p>Python | Illustrator | HTML Developer</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="login_signup.html">Login / Signup</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div>
+      <!-- Cartoon illustration only -->
+      <img src="cartoonimage.png" alt="Fatima Cartoon" class="cartoon-img" />
+
+      <!-- About text -->
+      <p>
+        Hello! I’m Fatima, a passionate Python programmer and Illustrator. I love building projects and exploring web
+        technologies like HTML. This cartoon represents my creative side while keeping my portfolio professional.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">Python</div>
+      <div class="card">Illustrator</div>
+      <div class="card">HTML</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: mirzafatima.22222@gmail.com</p>
+    <div class="contact-links">
+      <a href="https://www.fiverr.com/?force_buying_nav" target="_blank">Fiverr</a>
+      <a href="https://www.facebook.com/profile.php?id=61579209387551" target="_blank">Facebook</a>
+      <a href="https://instagram.com/codewithfatima11" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Fatima Mirza | Portfolio</p>
+  </footer>
+</body>
+</html>
+
